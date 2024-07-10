@@ -1,0 +1,24 @@
+@media (width > 991px) {
+  #app {
+    display: flex;
+    gap: 3.2rem;
+    max-width: 96rem;
+  }
+
+  main {
+    margin-top: 0;
+    flex: 1;
+  }
+
+  h1 {
+    text-align: left;
+  }
+
+  time.full {
+    display: block;
+  }
+
+  time.short {
+    display: none;
+  }
+}
