@@ -1,6 +1,4 @@
-
- 
- export default function Dates () {
+export default function Dates () {
 
   const formatter = (date) => {
     return {
@@ -64,4 +62,3 @@
     createSelectionHours
   }
  }
- 
