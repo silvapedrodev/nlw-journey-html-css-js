@@ -1,4 +1,6 @@
- export default function Activities (dates) {
+import { openModal } from "./events.js";
+
+ export default function Activities (formatter) {
 
   const activity = {
     name: "Almoço",
@@ -31,7 +33,7 @@
   
     input += ">"
   
-    const format = dates(activity.date);
+    const format = formatter(activity.date);
   
     return `
       <div class="card-bg">
@@ -105,7 +107,7 @@
     })
   
     if(activityExists) {
-      return alert('Dia/Hora não disponível')
+      return openModal()
     }
   
     activities = [newActivity, ...activities]

@@ -30,12 +30,112 @@ html, input, select, button, option {
 
 body {
   font-size: 1.6rem;
+  position: relative;
 }
 
-.modal-error {
-  display: none;
+.sr-only{
+  position: relative;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
 }
 
+/* modal */
+.modal-wrapper::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(0, 0, 0, 0.60);
+  backdrop-filter: blur(4px);
+
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+
+.modal-wrapper{
+  position: absolute;
+  inset: 0;
+ 
+  display: grid;
+  place-content: center;
+  margin-top: -12dvh;
+  z-index: 2;
+
+  opacity: 0;
+  visibility: hidden;
+}
+
+.modal-wrapper.open {
+  opacity: 1;
+  visibility: visible;
+  transform: scale(1);
+}
+
+.alert {
+  display: flex;
+  flex-direction: column;
+  gap: 3.2rem;
+
+  width: 28rem;
+
+  background-color: var(--zinc900);
+  border-radius: 1.2rem;
+  padding: 16px 24px;
+
+  box-shadow: 0px 0px 0px 1px rgba(255, 255, 255, 0.03) 
+  inset, 0px 1px 0px 0px rgba(255, 255, 255, 0.03) 
+  inset, 0px 8px 8px 0px rgba(0, 0, 0, 0.10), 
+  0px 4px 4px 0px rgba(0, 0, 0, 0.10), 
+  0px 2px 2px 0px rgba(0, 0, 0, 0.10), 
+  0px 0px 0px 1px rgba(0, 0, 0, 0.10);
+
+  z-index: 3;
+  transform: scale(0.8);
+}
+
+.alert.open {
+  transform: scale(1);
+  transition: transform 200ms ease-in; 
+}
+
+.alert > div {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.alert p {
+  font-weight: bold;
+}
+
+.alert svg {
+  width: 24px;
+  fill: var(--lime300);
+}
+
+.alert button {
+  align-self: flex-end;
+
+  width: 60px;
+  height: 40px;
+}
+
+.alert button:hover {
+  filter: brightness(0.9) drop-shadow(0 0 4px rgba(190, 242, 100, 0.822));
+}
+
+.alert button:focus {
+  outline: 2px solid var(--zinc400);
+}
+
+/* app */
 #app {
   max-width: 32rem;
   padding: 4rem 2rem;
