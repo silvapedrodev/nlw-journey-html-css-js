@@ -29,10 +29,16 @@ Aplicação desenvolvida no NLW Journey da Rocketseat na trilha HTML+CSS+JS.
   <img alt="Preview do projeto desenvolvido." src=".github/preview.gif" width="80%">
 </p>
 
+## 🎨 Design
+
+- <a href="https://www.figma.com/community/file/1392277205162897872/nlw-journey-roteiro-de-viagem" target="_blank" rel="noopener noreferrer">Figma do Projeto</a>
+
+
 ##  📝 About
+
 Este projeto é uma versão simplificada de um sistema de roteiro de viagem! Ele permite que os usuários planejem tarefas e horários de forma intuitiva e responsiva.
 
-Desenvolvido com base no NLW Journey da <a href="https://www.rocketseat.com.br/" target="_blank" rel="noopener noreferrer">Rocketseat</a> na trilha HTML+CSS+JS. 
+Desenvolvido com base no NLW Journey da <a href="https://www.rocketseat.com.br/" target="_blank" rel="noopener noreferrer">Rocketseat</a> na trilha HTML+CSS+JS.
 
 
 ## 🚀 Tecnologias
@@ -49,6 +55,14 @@ Esse projeto foi desenvolvido com as seguintes tecnologias:
 - <a href="https://day.js.org/" target="_blank" rel="noopener noreferrer">Day.js</a> para manipulação de datas
 - Responsividade e design mobile-first
 - Modal de alerta para erros no preenchimento de dados
+
+
+## 💻| 📱 Preview 
+
+[![preview](./.github/preview-display.png)](https://silvapedrodev.github.io/nlw-journey-html-css-js/)
+
+- <a href="https://silvapedrodev.github.io/nlw-journey-html-css-js/" target="_blank">**Click Here** &#x1F517;</a>
+
 
 ## 👨‍💻 Author
 This project was made with ❤️ by **Pedro.S.**
